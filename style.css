@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    background: black;
+    color: white;
+}
+.container
+{
+    margin:2em 0 ;
+}
+.container header
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header #headerLogo
+{
+    font-weight: bolder;
+}
+.container header #headerLogo h1
+{
+    text-transform: uppercase;
+}
+.container header #headerMenu #headerMenuList
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container header #headerMenu #headerMenuList li 
+{
+    padding: 1em 1em;
+    text-transform: capitalize;
+    
+}
+.container header #headerMenu #headerMenuList li  a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.container header #headerMenu #headerMenuList  li a.active
+{
+    box-shadow: 0 2px 0 0 #ff69b4;
+    color: #ff69b4;
+}
+.container header #headerMenu #headerMenuList  li a:hover
+{
+    box-shadow: 0 2px 0 0 #ff69b4;;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.container #intro
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+}
+.container #intro #introText
+{
+    width: 50%;
+}
+.container #intro #introText p
+{
+    text-transform: uppercase;
+    color: #ff69b4;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 1em 0;
+}
+.container #intro #introText h1
+{
+    font-size: 50px;
+    width: 70%;
+    line-height: 50px;
+    padding: 0.1em 0;
+}
+.container #intro #introText h1 span
+{
+    color: #ff69b4;
+}
+.container #intro #introText h3
+{
+    padding: 0.8em 0;
+}
+.container #intro #introImage
+{
+    width: 40%;
+}
+.container #intro #introImage img
+{
+    width: 100%;
+    border-radius: 5px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+.container #intro #introBtn
+{
+    margin: 1em 0;
+}
+.container #intro #introBtn button
+{
+    width: 30%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0.5em;
+}
+.container #intro #introBtn .introBtn1
+{
+    background: #ff69b4;
+    color: black;
+     border: none;
+    outline: none;
+}
+.container #intro #introBtn .introBtn2
+{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.container #about
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 0;
+}
+.container #aboutImg
+{
+    width: 40%;
+}
+.container #aboutImg img
+{
+    border-radius: 50%;
+    width: 100%;
+}
+.container #aboutText
+{
+    
+    width: 50%;
+   
+}
+.container #aboutText  .aboutTextHeader
+{
+    font-size: 50px;
+    margin: 0.8em 0;
+}
+.container #aboutText  .aboutTextPar
+{
+    margin:0.8em 0 ;
+    color: #a9a8a8be;
+}
+.container #aboutText .aboutInfo
+{
+    margin: 1em 0;
+}
+.container #aboutText .aboutInfo p 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0.1em 0;
+  font-size: 18px;
+}
+.container #aboutText .aboutInfo p  span
+{
+    width: 30%;
+}
+.container #aboutText .aboutInfo p  .infoText
+{
+    color: #a9a8a8be;
+}
+.container #aboutText .aboutInfo p  .infoText a
+{
+    color: #a9a8a8be;
+    text-decoration: none;
+}
+.container #aboutText .completedProject
+{
+    margin: 2em 0;
+    font-size: 18px;
+}
+.container #aboutText .completedProject span
+{
+    color:#ff69b4 ;
+    font-weight: bolder;
+}
+.container #aboutText button
+{
+    width: 30%;
+    padding: 15px;
+    background:#ff69b4 ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.container #aboutText button:hover
+{
+    background: transparent;
+    border: 1px solid white;;
+    color: white;
+}
+.container #resume
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+}
+.container #resume .resumeHeader
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 1em ;
+}
+.container #resume .resumePar
+{
+    color: #a9a8a8be;
+    margin-bottom: 2em;
+}
+.container #resume  #cards
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr   ;
+    width: 100%;
+    gap: 10px;
+}
+.container #resume  #cards .card
+{
+    margin: 1em 0;
+    background-color: #1f1e1ebe;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.container #resume  #cards .card .duration
+{
+    color: #ff69b4;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+.container #resume  #cards .card .course
+{
+    font-size: 30px;
+    padding: 0.1em 0;
+}
+.container #resume  #cards .card .organization
+{
+    text-transform: uppercase;
+    color: #a9a8a8be;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+.container #resume  #cards .card  .decription
+{
+    color: #a9a8a8be;
+    padding: 0.8em 0;
+}

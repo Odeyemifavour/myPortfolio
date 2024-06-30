@@ -296,3 +296,77 @@ body
     color: #a9a8a8be;
     padding: 0.8em 0;
 }
+.container #resume  button
+{
+    width: 18%;
+    padding: 15px;
+    background:#ff69b4 ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 1em 0;
+}
+
+.container #services
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
+.container #services .servicesHeader
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 1em ;
+}
+.container #services .servicesPar
+{
+    color: #a9a8a8be;
+    margin-bottom: 2em;
+    font-size: 15px;
+}
+.container #services .services
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    cursor: pointer;
+}
+.container #services .services .service 
+{
+    background-color: #1f1e1ebe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+.container #services .services .service  span i
+{
+    font-size: 50px;
+    color: #ff69b4;
+    margin: 0.8em 0;
+}
+.container #services .services .service .serviceTitle
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 2px 0 0 #ff69b4;
+    padding: 0.4em 0;
+}
+.container #services .services .service .serviceDescription
+{
+    width: 80%;
+    text-align: center;
+    padding: 1em 0;
+}

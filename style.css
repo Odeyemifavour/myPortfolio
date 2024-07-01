@@ -15,16 +15,24 @@ body
 .container
 {
     margin:2em 0 ;
+    
 }
 .container header
 {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgb(11, 11, 11);
+    top: 0;
+    padding: 10px;
 }
+
 .container header #headerLogo
 {
     font-weight: bolder;
@@ -252,6 +260,7 @@ body
 {
     color: #a9a8a8be;
     margin-bottom: 2em;
+    text-align: center;
 }
 .container #resume  #cards
 {
@@ -332,10 +341,11 @@ body
     color: #a9a8a8be;
     margin-bottom: 2em;
     font-size: 15px;
+    text-align: center;
 }
 .container #services .services
 {
-    width: 100%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -350,6 +360,7 @@ body
     align-items: center;
     padding: 30px;
     border-radius: 10px;
+    width: 100%;
 }
 .container #services .services .service  span i
 {
@@ -369,4 +380,106 @@ body
     width: 80%;
     text-align: center;
     padding: 1em 0;
+    color: #a9a8a8be;
+}
+.container #skills
+{
+    width: 80%;
+    margin: auto;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container #skills .skillsHeader
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 1em ;
+}
+.container #skills .skillsPar
+{
+    color: #a9a8a8be;
+    margin-bottom: 2em;
+    font-size: 15px;
+    text-align: center;
+}
+.container #skills  .skillsProgress h2
+{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.container #skills  .skillsProgress .progressBar
+{
+    background-color: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.container #skills  .skillsProgress .progressBar div
+{
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+.container #skills  .skillsProgress .progressBar div span
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    float: right;
+    margin-top: -15px;
+    margin-bottom: -20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container #skills  .skillsProgress .progressBar .html
+{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+.container #skills  .skillsProgress .progressBar .css
+{
+    background: #cddc39;
+     animation: css 2s linear forwards;
+}
+.container #skills  .skillsProgress .progressBar .javascript
+{
+    background: #00bcd4;
+     animation: javascript 3s linear forwards;
+}
+.container #skills  .skillsProgress .progressBar .html span
+{
+    border: 1px solid #e91e63;
+}
+.container #skills  .skillsProgress .progressBar .css span
+{
+    border: 1px solid #cddc39;
+}
+.container #skills  .skillsProgress .progressBar .javascript span
+{
+    border: 1px solid #00bcd4;
+}
+@keyframes html{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 50%;
+    }
 }
